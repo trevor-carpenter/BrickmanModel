@@ -2,8 +2,8 @@ function [ T,Y ] = euler( ode,t,h,y,options)
 %EULER Simple Euler ODE solver
 %   [ T,Y ] = euler( ode,t,h,y,options) estimates y at t+h using the Euler
 %   method: 
-%   f(t,y) = dy(t)/dt 
-%   y(t+h) = y(t) + h f(t,y). The step size h is applied directly.
+%   dy(t)/dt = f(t,y)
+%   y(t+h) = y(t) + h dy(t)/dt. The step size h is applied directly.
 %   the derivatives of y at t are given by the function ode, t is the time 
 %   at which to evaluate the dervatives, h is the step and y is the inital 
 %   condition y(t). This method is supplied to allow iterative solution 
