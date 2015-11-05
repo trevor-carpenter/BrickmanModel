@@ -2,10 +2,24 @@ function [ brickmanModel ] = BrickmanModelHelper(dx,L,dy,W,dt,T,startX,startY,x0
 %BRICKMANMODELHELPER Summary of this function goes here
 %   Detailed explanation goes here
 %contain
+brickmanModel.dx=dx;
+brickmanModel.L=L;
+brickmanModel.dy=dy;
+brickmanModel.W=W;
+brickmanModel.dt=dt;
+brickmanModel.T=T;
+brickmanModel.startX=startX;
+brickmanModel.startY=startY;
+brickmanModel.x0=x0;
+brickmanModel.R=R;
+brickmanModel.u0=u0;
+brickmanModel.method=method;
+brickmanModel.options=options;
 brickmanModel.numberOfTimeSteps=floor(T/dt)+1;
 brickmanModel.numberOfParticles=length(startY);
 brickmanModel.particlePositions=zeros(brickmanModel.numberOfParticles,brickmanModel.numberOfTimeSteps,3);
 brickmanModel.aGridSamples=brickmanAGrid(0,dx,L,0,dy,W,x0,R,u0);
+%TODO use function handle and move duplicate code out side of switch
 switch method
     case 'ODE45'
         for particle=1:1:brickmanModel.numberOfParticles

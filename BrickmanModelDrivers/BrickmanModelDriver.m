@@ -37,6 +37,9 @@ options = odeset('RelTol',1e-4,'AbsTol',[1e-4 1e-4]);
 display=1;
 
 %returns structure with model results
-BrickmanModelHelper(dx,L,dy,W,dt,T,startX,startY,x0,R,u0,method,options);
+brickmanModel=BrickmanModelHelper(dx,L,dy,W,dt,T,startX,startY,x0,R,u0,method,options);
+
+%tidy up
+clear L W dx dy T dt startX startY x0 R u0;
 
 
