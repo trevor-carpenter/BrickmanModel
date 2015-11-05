@@ -33,15 +33,20 @@ R=0.32*W;
 %initial velocity (m/s)
 u0=1;
 
-%solution method (uncomment PAIRS as required)
-%method='EULER'; %Euler method
+%%solution method (uncomment PAIRS as required)
+
+%%Euler method
+%method='EULER'; 
 %options = [];
 
-%method='RK4'; %fixed Runge-Kutta 4
+%%fixed Runge-Kutta 4
+%method='RK4'; 
 %options = [];
 
-method='ODE45'; %adaptive Runge-Kutta 4
+%%adaptive Runge-Kutta 4
+method='ODE45'; 
 options = odeset('RelTol',1e-4,'AbsTol',[1e-4 1e-4]);
+
 
 %display some graphical output
 display=1;
