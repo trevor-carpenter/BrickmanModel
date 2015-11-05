@@ -33,7 +33,7 @@ function [ T,Y ] = brickmanSolveRk4(startTime,deltaT,endTime,startX,startY,x0,R,
     Y=zeros(nSteps,2);
     Y(1,:)=[startX,startY];
     for step=1:1:nSteps    
-        [T(step+1,:),Y(step+1,:)]= rk4(@(t,y) brickmanFun(t,y,x0,R,u0),T(step,:),deltaT,Y(step,:),options);
+        [T(step+1,:),Y(step+1,:)]= rk4(@(t,y) brickmanFun(t,y,x0,R,u0),T(step,:),deltaT,Y(step,:)',options);
     end
 end
 

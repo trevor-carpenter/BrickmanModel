@@ -54,11 +54,11 @@ brickmanModel.particlePositions=zeros(brickmanModel.numberOfParticles,brickmanMo
 brickmanModel.aGridSamples=brickmanAGrid(0,dx,L,0,dy,W,x0,R,u0);
 switch method
     case 'ODE45'
-            h = @brickmanSolveOde45;
+            h = @brickmanSolverOde45;
     case 'RK4'
-            h = @brickmanSolveRk4;
+            h = @brickmanSolverRk4;
     case 'EULER'
-            h = @brickmanSolveEuler;
+            h = @brickmanSolverEuler;
     otherwise
         disp('Unknown method.')
 end

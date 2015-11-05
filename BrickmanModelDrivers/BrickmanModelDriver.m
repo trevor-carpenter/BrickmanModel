@@ -40,12 +40,12 @@ u0=1;
 %options = [];
 
 %%fixed Runge-Kutta 4
-%method='RK4'; 
-%options = [];
+method='RK4'; 
+options = [];
 
 %%adaptive Runge-Kutta 4
-method='ODE45'; 
-options = odeset('RelTol',1e-4,'AbsTol',[1e-4 1e-4]);
+%method='ODE45'; 
+%options = odeset('RelTol',1e-4,'AbsTol',[1e-4 1e-4]);
 
 
 %display some graphical output

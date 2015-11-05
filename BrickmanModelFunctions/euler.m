@@ -23,7 +23,7 @@ function [ T,Y ] = euler( ode,t,h,y,options)
 
 a=ode(t,y);
 %TODO annoying transpose - I am doing something wrong
-Y=y'+h*a;
+Y=y+h*a;
 T=t+h;
 end
 
