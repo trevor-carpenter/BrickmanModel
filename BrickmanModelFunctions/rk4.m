@@ -15,7 +15,17 @@ function [ T,Y ] = rk4( ode,t,h,yOfx,options)
 %   to ode45 - it is not recommend to use this method to produce high 
 %   quality estimates of a solution. Options is unused.
 %   see: https://en.wikipedia.org/wiki/Runge-Kutta_methods
-%   
+
+%   Copyright (c) [2015] [sams.ac.uk]
+%   This content is released under a modified MIT License.
+%   (https://opensource.org/licenses/MIT)
+%   with the additional clause:
+%   Except as contained in this notice, the name(s) of the above copyright 
+%   holders shall not be used in advertising or otherwise to promote the 
+%   sale, use or other dealings in this Software without prior written 
+%   authorization.
+
+   
 ho2=h/2;
 a=ode(t,yOfx); %a is in the space of dy(x)/dx
 %TODO annoying transpose - I am doing something wrong

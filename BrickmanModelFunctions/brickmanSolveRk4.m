@@ -17,6 +17,16 @@ function [ T,Y ] = brickmanSolveRk4(startTime,deltaT,endTime,startX,startY,x0,R,
 %   – biological interactions during fish early life.
 %   pg 9-16 ICES COOPERATIVE RESEARCH REPORT N0.295
 
+%   Copyright (c) [2015] [sams.ac.uk]
+%   This content is released under a modified MIT License.
+%   (https://opensource.org/licenses/MIT)
+%   with the additional clause:
+%   Except as contained in this notice, the name(s) of the above copyright 
+%   holders shall not be used in advertising or otherwise to promote the 
+%   sale, use or other dealings in this Software without prior written 
+%   authorization.
+
+
     nSteps=floor((endTime-startTime)/deltaT);
     T=zeros(nSteps,1);
     T(1)=startTime;

@@ -16,6 +16,16 @@ function [T,Y] = brickmanSolveOde45(startTime,deltaT,endTime,startX,startY,x0,R,
 %   (1) Manual of recommended practices for modelling physical
 %   – biological interactions during fish early life.
 %   pg 9-16 ICES COOPERATIVE RESEARCH REPORT N0.295
+
+%   Copyright (c) [2015] [sams.ac.uk]
+%   This content is released under a modified MIT License.
+%   (https://opensource.org/licenses/MIT)
+%   with the additional clause:
+%   Except as contained in this notice, the name(s) of the above copyright 
+%   holders shall not be used in advertising or otherwise to promote the 
+%   sale, use or other dealings in this Software without prior written 
+%   authorization.
+
     T=startTime:deltaT:endTime;
     [T,Y] = ode45(@(t,y) brickmanFun(t,y,x0,R,u0),T,[startX,startY],options);
 end

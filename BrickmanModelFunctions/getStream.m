@@ -7,6 +7,17 @@ function [ s ] = getStream(x,y,x0,R,u0)
 %   (1) Manual of recommended practices for modelling physical
 %   – biological interactions during fish early life.
 %   pg 9-16 ICES COOPERATIVE RESEARCH REPORT N0.295
+
+%   Copyright (c) [2015] [sams.ac.uk]
+%   This content is released under a modified MIT License.
+%   (https://opensource.org/licenses/MIT)
+%   with the additional clause:
+%   Except as contained in this notice, the name(s) of the above copyright 
+%   holders shall not be used in advertising or otherwise to promote the 
+%   sale, use or other dealings in this Software without prior written 
+%   authorization.
+
+
     xTrans = x-x0;  % translated x coordiante
     xTransSq = xTrans^2;  % translated x coordiante
     denominator = xTransSq+y^2;

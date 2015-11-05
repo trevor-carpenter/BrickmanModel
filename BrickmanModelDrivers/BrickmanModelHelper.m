@@ -23,6 +23,16 @@ function [ brickmanModel ] = BrickmanModelHelper(dx,L,dy,W,dt,T,startX,startY,x0
 %   (particle number index,time step index,[u,v,t])
 %   
 
+%   Copyright (c) [2015] [sams.ac.uk]
+%   This content is released under a modified MIT License.
+%   (https://opensource.org/licenses/MIT)
+%   with the additional clause:
+%   Except as contained in this notice, the name(s) of the above copyright 
+%   holders shall not be used in advertising or otherwise to promote the 
+%   sale, use or other dealings in this Software without prior written 
+%   authorization.
+
+
 
 
 brickmanModel.dx=dx;

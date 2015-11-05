@@ -1,5 +1,15 @@
 %Standard setup of Brickman penisula model
-%24*60*60,3,45000,50000,0.32*50000,1
+
+%   Copyright (c) [2015] [sams.ac.uk]
+%   This content is released under a modified MIT License.
+%   (https://opensource.org/licenses/MIT)
+%   with the additional clause:
+%   Except as contained in this notice, the name(s) of the above copyright 
+%   holders shall not be used in advertising or otherwise to promote the 
+%   sale, use or other dealings in this Software without prior written 
+%   authorization.
+
+
 %Length of domain (m)
 L=100000;
 %Width of doamin (m)
